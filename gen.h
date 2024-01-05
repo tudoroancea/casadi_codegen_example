@@ -17,7 +17,7 @@ extern "C" {
 #define casadi_int long long int
 #endif
 
-#include <casadi/mem.h>
+#include <casadi_mem.h>
 int f(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem);
 int f_alloc_mem(void);
 int f_init_mem(int mem);

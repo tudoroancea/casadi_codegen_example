@@ -26,8 +26,8 @@ def main(filename: str = "gen", mem: bool = True, verbose: bool = True):
             lines = f.readlines()
         with open(filename + ext, "w") as f:
             for line in lines:
-                if "#include <casadi/mem.h>" in line:
-                    line = line.replace("<casadi/mem.h>", '"casadi_mem.h"')
+                if "casadi/mem.h" in line:
+                    line = line.replace("casadi/mem.h", "casadi_mem.h")
                 f.write(line)
 
 
